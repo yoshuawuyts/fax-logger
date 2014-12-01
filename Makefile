@@ -1,9 +1,9 @@
-SRC = index.js
+SRC = lib/index.js
 
 include node_modules/make-lint/index.mk
 
 LINT_CONFIG = .eslintrc
-TESTS = test.js
+TESTS = test/index.js
 
 test: lint
 	@NODE_ENV=test ./node_modules/.bin/mocha \
@@ -31,6 +31,7 @@ test-travis:
 		--bail
 
 example:
+	@mkdir build/
 	@node example/make.js
 	@open example/index.html
 	@node node_modules/.bin/http-server \
