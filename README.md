@@ -1,4 +1,4 @@
-# fax-logger
+# [fax][fax]-logger
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
@@ -35,4 +35,5 @@ app.use(logger())
 [downloads-image]: http://img.shields.io/npm/dm/fax-logger.svg?style=flat-square
 [downloads-url]: https://npmjs.org/package/fax-logger
 
+[fax]: https://github.com/yoshuawuyts/fax
 [koa-logger]: https://github.com/koajs/logger
