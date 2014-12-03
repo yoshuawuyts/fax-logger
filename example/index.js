@@ -6,4 +6,5 @@ require('setimmediate');
 
 var app = fax();
 app.use(logger());
-app.send();
+
+app.send({url: 'http://api.github.com'});
